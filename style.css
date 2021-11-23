@@ -1,0 +1,414 @@
+*
+{
+	align-text:center;
+	align:center;
+	font-family: 'Zen Dots', cursive;
+}
+
+img
+{
+	height:75%;
+	width:32%;
+}
+
+img:hover
+{
+	cursor:pointer;
+}
+
+h1:hover
+{
+	cursor:pointer;
+}
+
+input[type="radio"]::before
+{
+	cursor:pointer;
+	background-color:red;
+}
+
+progress:hover
+{
+	cursor:pointer;
+}
+
+legend
+{
+	font-size:1.5em;
+	color:red;
+}
+
+.credits h1 , .credits  p
+{
+	font-family: 'Knewave', cursive;
+	text-align:right;
+}
+
+fieldset
+{
+	display:inline-block;
+}
+
+.header
+{
+	height: 100vh;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 20px;
+	text-align: center;
+	color: #bc13fe;
+	animation: animate 50s infinite;	/* key frame call from here*/
+}
+
+
+/* background image slide */
+@keyframes animate
+{
+
+	0%,100%{
+		background-image: url(./assets/Pics/1.jpg);
+	}
+	25%{
+		background-image: url(./assets/Pics/pexels-2.jpg);
+	}
+	50%{
+		background-image: url(./assets/Pics/pexels-3.jpg);
+	}
+	75%{
+		background-image: url(./assets/Pics/pexels-4.jpg);
+	}
+}
+
+
+/* login button style*/
+.login-btn
+{
+	width: 100px;
+	padding: 8px 0;
+	outline: none ! important;
+/*	border: 2px solid black;*/
+	border: 2px solid white;
+	border-radius: 50px;
+	background: transparent;
+/*	color: black;*/
+	color: white;
+	float: right;
+	font-size: 30px;
+	font-weight: bolder;
+}
+.header h1 
+{
+	padding-top: 200px;
+	padding-bottom: 0;
+	font-size: 70px;
+	font-family: "Sacramento", sans-serif;
+	font-style: italic;
+	font-variant: small-caps;
+	/*neon light effect */
+	text-shadow: 
+	        0 0 7px #fff,
+	        0 0 10px #fff,
+	        0 0 21px #fff,
+	        0 0 42px #bc13fe,
+	        0 0 82px #bc13fe,
+	        0 0 92px #bc13fe,
+	        0 0 102px #bc13fe,
+	        0 0 151px #bc13fe;
+	 	    animation: pulsate 1.5s infinite alternate;       
+}
+@keyframes pulsate
+{
+	100%{
+		text-shadow:
+		    0 0 4px #fff,
+	        0 0 11px #fff,
+	        0 0 19px #fff,
+	        0 0 40px #bc13fe,
+	        0 0 80px #bc13fe,
+	        0 0 90px #bc13fe,
+	        0 0 100px #bc13fe,
+	        0 0 150px #bc13fe;
+	}
+	0%
+	{
+
+		text-shadow:
+		    0 0 2px #fff,
+	        0 0 4px #fff,
+	        0 0 6px #fff,
+	        0 0 10px #bc13fe,
+	        0 0 45px #bc13fe,
+	        0 0 55px #bc13fe,
+	        0 0 70px #bc13fe,
+	        0 0 80px #bc13fe;
+	}
+}
+
+.header p
+{
+	font-size: 40px;
+	margin: 18px 0;
+	font-family: "Sacramento", sans-serif;
+	/*neon light effect*/
+	text-shadow: 
+	        0 0 7px #fff,
+	        0 0 10px #fff,
+	        0 0 21px #fff,
+	        0 0 42px #bc13fe,
+	        0 0 82px #bc13fe,
+	        0 0 92px #bc13fe,
+	        0 0 102px #bc13fe,
+	        0 0 151px #bc13fe;
+	        animation: pulsate 1.5s infinite alternate; 
+
+
+}
+@keyframes pulsate
+{
+	100%{
+		text-shadow:
+		    0 0 4px #fff,
+	        0 0 11px #fff,
+	        0 0 19px #fff,
+	        0 0 40px #bc13fe,
+	        0 0 80px #bc13fe,
+	        0 0 90px #bc13fe,
+	        0 0 100px #bc13fe,
+	        0 0 150px #bc13fe;
+	}
+	0%
+	{
+
+		text-shadow:
+		    0 0 2px #fff,
+	        0 0 4px #fff,
+	        0 0 6px #fff,
+	        0 0 10px #bc13fe,
+	        0 0 45px #bc13fe,
+	        0 0 55px #bc13fe,
+	        0 0 70px #bc13fe,
+	        0 0 80px #bc13fe;
+	}
+}
+
+/* Search Box*/
+.input-group
+{
+	width: 90%;
+	max-width: 600px;
+	border-radius: 30px;
+	background:#fff;
+	margin: auto;
+	padding: 2px;
+}
+
+/*input box*/
+.form-control
+{
+	border: 0 !important;
+	border-radius: 30px 0 0 30px ! important;
+	margin: 2px;
+	box-shadow: none !important;
+}
+
+/*search button*/
+.input-group-text
+{
+	width: 100px;
+	height: 50px;
+	background-image: linear-gradient(#00ff7e,#1f3d90);
+	border: 0 ! important;
+	color: #fff ! important;
+	padding: 0 25px ! important;
+	border-radius: 30px ! important;
+	box-shadow: none ! important
+}
+
+/* Next Section qus featured*/
+.qus-featured
+{
+	padding: 100px 0;
+}
+h1
+{
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 50px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50px;
+  height: 50px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 50px;
+  height: 50px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.slidecontainer p
+{
+	font-size: 50px;
+}
+.slidecontainer
+{
+	padding-top: 50px;
+}
+.container h2
+{
+	text-decoration: underline;
+}
+
+
+#login-form
+{
+    display: none;
+}
+.form-box
+{
+    width:450px;
+	height:700px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(2,2,0,0.7);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:235px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px red;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+	font-weight: bolder;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 122px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 4px solid red;
+	outline:none;
+	background: transparent;
+	font-weight: bolder;
+	font-size: 30px;
+
+
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+.input-group-register span
+{
+	color:#777;
+	font-size:15px;
+	font-weight: bolder;
+	color: red;
+	bottom:50px;
+	position:absolute;
+}
+.input-group-login span
+{
+	color:#777;
+	font-size:15px;
+	font-weight: bolder;
+	color: red;
+	bottom:50px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
