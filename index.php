@@ -61,7 +61,6 @@ if( $_SERVER["REQUEST_METHOD"] == "POST")
 		     <input type="radio" id="ml" name="gndr" value="Male" required>
 		     <input type="radio" id="fml" name="gndr" value="Female" required>
 		     <input type="text" class="input-field" placeholder="Home State" name="hs" required>
-		     <input type="number" class="input-field" placeholder="Contact" name="cont" min="1000000000" max="9999999999"required>
                     <button type='submit'class='submit-btn'>Register</button>
 <?php
         if ( $_SERVER["REQUEST_METHOD"] == "POST" )

@@ -48,10 +48,6 @@
                                                 		<th align="right"><label>Home State : </label></th>
 		                                                <td><input type="text" name="hs" required></td>
 							</tr>
-							<tr>
-                                                		<th align="right"><label>Contact : </label></th>
-								<td><input type="number" name="cont" min="1000000000" max="9999999999"required></td>
-							</tr>
 						</table>
 						<br><br>
                                 		<input type="Submit" value="Register">
@@ -87,6 +83,8 @@
 			$sql="insert into Login_Database (`Username`,`Password`) values ('".$usrnm."','".$pswd."');"; 
 			$con->query($sql);
 			$sql="insert into Users_Database (`Username`,`Name`,`Age`,`Gender`,`Home State`,`Contact`) values ('".$usrnm."','".$_POST["nm"]."','".$_POST["age"]."','".$_POST["gndr"]."','".$_POST["hs"]."','".$_POST["cont"]."');"; 
+			$con->query($sql);
+			$sql="insert into Users_Response (`Username`) values ('".$usrnm."');"; 
 			$con->query($sql);
 			header("Location: login.php");
                 }

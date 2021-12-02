@@ -64,7 +64,7 @@ fieldset
 
 
 /* background image slide */
-@keyframes animate
+/*@keyframes animate
 {
 
 	0%,100%{
@@ -80,7 +80,7 @@ fieldset
 		background-image: url(./assets/Pics/pexels-4.jpg);
 	}
 }
-
+*/
 
 /* login button style*/
 .login-btn
